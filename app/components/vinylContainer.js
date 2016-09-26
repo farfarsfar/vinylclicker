@@ -21,7 +21,7 @@ class VinylContainer extends Component {
     super();
   }
   componentDidMount() {
-    
+    console.log("hej")
   }
   render() {
     return <div id="vinylContainer">

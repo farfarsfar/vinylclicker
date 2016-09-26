@@ -65,7 +65,7 @@
 /******/ 	}
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a5095b9992ecd59c9c18"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1677735a5f9b5e4647e1"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -35132,7 +35132,6 @@
 	    value: function handleAddon(event) {
 	      var addonType = event.target.value;
 	      console.log(event.currentTarget);
-	      console.log("hej");
 	    }
 	  }, {
 	    key: 'render',

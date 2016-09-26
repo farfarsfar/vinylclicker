@@ -26,10 +26,11 @@ module.exports = {
       },
       { test: /\.css$/, loader: "style!css" },
       { test: /\.styl$/, loader: "style-loader!css-loader!stylus-loader" },
-      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=1000000' }
+      { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=1000' }
     ]
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     /*new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
@@ -39,8 +40,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Fabian Ris Lundblad',
       template: 'index.template.html'
-    }),
-    new webpack.HotModuleReplacementPlugin()
+    })
   ]
 
 }
