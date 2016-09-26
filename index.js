@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import RootComponent from './app/root.js';
 import { AppContainer } from 'react-hot-loader';
-import style from './styles/main.styl';
+import style from './styles/importer.styl';
 
 ReactDOM.render(
   <AppContainer>

@@ -1,0 +1,27 @@
+#mainContainer
+  max-width 1200px
+  margin 0 auto
+  padding 1em
+
+#appContainer
+  display flex
+  flex-direction column
+
+#vinylContainer,
+#scoringContainer,
+#addonsContainer
+  background-color grey
+  margin 1em
+  flex 1
+  min-height 200px
+
+#vinylContainer
+  display flex
+  justify-content center
+  align-items center
+
+@media screen and (min-width 768px)
+  #appContainer
+    flex-direction row
+    flex-wrap wrap
+    justify-content center

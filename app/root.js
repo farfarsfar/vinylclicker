@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
+import { 
+  VinylContainer, 
+  ScoringContainer, 
+  AddonsContainer,
+  MainContainer } from './components'
 
-class VinylRecord extends Component {
-  render() {
-    return <div id="vinylRecord"></div>
-  }
-}
 
 class RootComponent extends Component {
   render() {
     return (
-      <div id="vinylContainer">
-        <VinylRecord />
-      </div>
+      <MainContainer>
+        <VinylContainer />
+        <ScoringContainer />
+        <AddonsContainer />
+      </MainContainer>
     )
   }
 }
