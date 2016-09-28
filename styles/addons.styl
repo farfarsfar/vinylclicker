@@ -1,16 +1,28 @@
-#addonsHeader
-  position relative
-  width 100%
-  margin 0
-  padding 1em 0 1em 0
-  background rgba(0,0,0,0.4)
-  height 5em
-  text-align center
-  box-shadow 0 10px 30px rgba(0,0,0,0.7)
-
 
 .addon
-  width 100%
+  position relative
   height 5em
   background lightblue
   border 2px solid darkblue
+  transition opacity 0.4s ease
+  &:after
+    display block
+    position absolute
+    top 0
+    content ''
+    width 100%
+    height 100%
+    transition all 1.4s linear
+    pointer-events none
+
+.greyed
+  pointer-events none
+  &:after
+    display block
+    position absolute
+    top 0
+    content ''
+    width 100%
+    height 100%
+    background-color rgba(0,0,0,0.7)
+    border 2px rgba(0,0,0,0.7)

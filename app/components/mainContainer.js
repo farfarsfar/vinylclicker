@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-const MainContainer = ({children}) => {
+const MainContainer = (props) => {
     return <div id="mainContainer">
              <header>
                <h1>Vinyl Clicker</h1>
              </header>
             <div id="appContainer">
-              {children}
+              {props.children}
             </div>
           </div>
 }

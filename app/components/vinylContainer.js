@@ -1,15 +1,21 @@
 import React, { Component } from 'react'
 
 class VinylRecord extends Component {
-  
+  constructor() {
+    super();
+  }
+
   render() {
     return <div onClick={this.props.onClick} id="vinylRecord"></div>
   }
 }
 
 class ClickCounter extends Component {
+  constructor() {
+    super();
+  }
+  
   render() {
-    console.log("clickcounter props", this.props)
     return <div id="clickCounter">
               <span>{this.props.clicks}</span>
             </div>
@@ -21,7 +27,6 @@ class VinylContainer extends Component {
     super();
   }
   componentDidMount() {
-    console.log("hej")
   }
   render() {
     return <div id="vinylContainer">
