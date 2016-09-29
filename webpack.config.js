@@ -47,8 +47,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Vinyl Clicker',
-      template: 'index.template.html',
-      filename: 'vinylclicker.html'
+      template: 'index.template.html'
     })
   ]
 
