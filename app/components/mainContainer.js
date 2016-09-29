@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// wrapper för komponenterna
 const MainContainer = (props) => {
     return <div id="mainContainer">
              <header>

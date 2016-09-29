@@ -2,7 +2,6 @@
 #vinylContainer
   display flex
   flex-direction column
-
   align-items center
 
 #vinylRecord
@@ -14,6 +13,7 @@
     linear-gradient(60deg, rgba(42, 41, 40, .85) 60%, transparent 60%) no-repeat 0 100%,
     repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px)
   background-size 50% 100%, 100% 50%, 100% 100%
+  cursor pointer
   &:after
     position absolute
     top 50% 
@@ -27,12 +27,39 @@
     background #b5ac9a
     content ''
 
+#vinylRecord
+  &.animate
+    animation bounce 0.1s
+
+@-webkit-keyframes bounce
+  0% {transform: scale(1)}
+  50% {transform: scale(0.92)}
+  75% {transform: scale(1.01)}
+  100% {transform: scale(1)}
+/*
+@keyframes bounce 
+  0% {background: black}
+  50% {background: red}
+  100% {background: black}
+*/
+
 #clickCounter
   width 100%
   margin 1em 0 2em 0
   padding 1em 0 1em 0
   background rgba(0,0,0,0.4)
   text-align center
+  div
+    display flex
+    flex-direction row
+    justify-content space-between
+  & p
+    display inline-block
+    width 48%
+    font-size 0.7em
+    span
+      font-size 2em
+      padding-left 0.5em
   span
     font-family pacifico
     font-size 3em

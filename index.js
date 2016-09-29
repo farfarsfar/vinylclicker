@@ -12,6 +12,8 @@ ReactDOM.render(
   document.getElementById('app')
 );
 
+// Om rootkomponenten har uppdaterats ser react-hot-loader till att bara det som är nytt
+// laddas om.
 if (module.hot) {
   module.hot.accept('./app/root.js', () => {
     const NextRootComponent = require('./app/root.js');

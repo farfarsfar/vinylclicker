@@ -7,6 +7,8 @@ class ScoringContainer extends Component {
   }
 
   render() {
+    
+    // renderar de addons som finns i root.js state.addons
     const addonsToDisplay = this.props.toDisplay;
 
     return <div id="scoringContainer">

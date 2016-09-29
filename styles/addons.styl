@@ -1,10 +1,39 @@
+#addonsContainer
+  display flex
+  flex-direction column
 
 .addon
   position relative
-  height 5em
+  height 20%
   background lightblue
   border 2px solid darkblue
+  margin-bottom 0.2em
   transition opacity 0.4s ease
+  & div
+    padding 0.5em 1em 0 1em
+  & p
+    font-size 0.75em
+    padding 0.2em
+  & p span
+    font-size 1.4em
+  & button
+    position absolute
+    right 0.5em
+    bottom 0.5em
+    border: 0;
+    background: #0087cc;
+    border-radius: 4px;
+    box-shadow: 0 5px 0 #006599;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 12px 20px;
+    transition: all .05s linear;
+    &:active
+      box-shadow: 0 2px 0 #006599;
+      transform: translateY(3px);
   &:after
     display block
     position absolute
@@ -18,11 +47,5 @@
 .greyed
   pointer-events none
   &:after
-    display block
-    position absolute
-    top 0
-    content ''
-    width 100%
-    height 100%
     background-color rgba(0,0,0,0.7)
     border 2px rgba(0,0,0,0.7)
